@@ -1,0 +1,114 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background: linear-gradient(rgba(4, 11, 26, 0.45), rgba(4, 11, 26, 0.45)),
+    url(pexels-lil-artsy-1213447.jpg);
+  background-size: cover;
+  /* height: 100%; */
+  display: flex;
+}
+
+.to-do {
+  background-color: white;
+  width: 30%;
+  margin: 87px auto 15px auto;
+  padding: 50px;
+  border-radius: 32.9px;
+  height: 100%;
+}
+
+.section-to-do {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+/*
+ul li {
+  list-style-type: none;
+}*/
+input {
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  border: 3px dashed #b68551;
+}
+input:focus {
+  outline: none;
+}
+.btn {
+  background-color: #b68551;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  padding: 15px 20px;
+}
+.btn:hover {
+  background-color: #b17d45;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 92%;
+  margin: 0px 8px;
+  justify-content: center;
+}
+ul li {
+  position: relative;
+  border-bottom: 2px solid #b17d45;
+  width: 90%;
+  /* border-radius: 20px; */
+  padding: 20px 35px;
+}
+ul li:hover {
+  cursor: pointer;
+  color: #b68551;
+}
+ul li::before {
+  content: "☐";
+  text-decoration: none;
+  position: absolute;
+  left: 7px;
+  top: 12px;
+  font-size: 25px;
+}
+ul li.checked::before {
+  content: "☑";
+  position: absolute;
+  font-size: 25px;
+}
+ul li.checked {
+  text-decoration: line-through;
+  color: #b17d45;
+}
+ul li.checked:hover {
+  color: #dd9243;
+}
+li span {
+  color: rgb(228, 155, 86);
+  font-size: 33px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+li span:hover {
+  color: rgb(156, 106, 11);
+}
