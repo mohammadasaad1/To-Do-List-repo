@@ -4,7 +4,7 @@ let listOfTasks = document.querySelector(".listOfTasks");
 let cancelTask;
 form.addEventListener("submit", (e) => {
   e.preventDefault(); // pervent realoding on submit
-  if (inputVal.value == "") alert("You entered nothing!!!");
+  if (inputVal.value.trim() == "") alert("You entered nothing!!!");
   else {
     let task = `
                 <li>
